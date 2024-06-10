@@ -3,7 +3,7 @@ import { useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three';
 
 const HugeButtonMaterial = () => {
-    const texture = useLoader(TextureLoader, '/textures/huge_fucking_button.png');
+    const texture = useLoader(TextureLoader, 'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.2/dist/textures/huge_fucking_button.png');
     const materialRef = useRef();
     useEffect(() => {
         if (texture) {

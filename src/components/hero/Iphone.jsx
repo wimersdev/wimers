@@ -5,8 +5,8 @@ import HugeButton from './HugeButton.jsx';
 
 
 
-const Iphone= ({ hovered, setHovered, tex }) => {
-    const { nodes, materials } = useGLTF('/ip.glb');
+const Iphone= ({ hovered, setHovered, tex, num, model }) => {
+    const { nodes, materials } = useGLTF(model);
 
     // Обработчики наведения на iPhone
     const handlePointerOver = () => setHovered(true);
@@ -119,11 +119,11 @@ const Iphone= ({ hovered, setHovered, tex }) => {
                     scale={0.015}
                 />
             </group>
-            {tex === '/textures/screen01.png' && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
+            {num === 1 && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
         </group>
     );
 }
 
-useGLTF.preload('/ip.glb');
+useGLTF.preload(model);
 
 export default Iphone;

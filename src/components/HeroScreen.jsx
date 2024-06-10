@@ -6,7 +6,7 @@ import './hero/Hero.css';
 
 import * as THREE from "three";
 
-function HeroScreen() {
+function HeroScreen({assets}) {
     const [hovered, setHovered] = useState(false);
     const [activeSection, setActiveSection] = useState(0);
     const cameraRef = useRef();
@@ -87,7 +87,7 @@ function HeroScreen() {
                         <ScrollHandler onChange={setActiveSection}>
                             <FloatingPhones
                                 targets={targets}
-                                screens={screens}
+                                screens={assets}
                                 hovered={hovered}
                                 setHovered={setHovered}
                                 activeSection={activeSection}

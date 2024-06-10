@@ -24,7 +24,7 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetRotation4={targets.screen04.firstTarget.rotation}
                 activeSection={activeSection}
             >
-                <Iphone tex={screens[0]} hovered={hovered} setHovered={setHovered} />
+                <Iphone model={screens.iphoneModel} hbTex={screens.hugeButton} num={1} tex={screens.screen01} hovered={hovered} setHovered={setHovered} />
             </FloatingGroup>
 
             <FloatingGroup
@@ -40,7 +40,7 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetRotation4={targets.screen04.secondTarget.rotation}
                 activeSection={activeSection}
             >
-                <Iphone tex={screens[1]} hovered={hovered} setHovered={setHovered} />
+                <Iphone model={screens.iphoneModel} hbTex={null} num={2} tex={screens.screen02} hovered={hovered} setHovered={setHovered} />
             </FloatingGroup>
 
             <FloatingGroup
@@ -55,7 +55,7 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetPosition4={targets.screen04.thirdTarget.position}
                 targetRotation4={targets.screen04.thirdTarget.rotation}
                 activeSection={activeSection}>
-                <Iphone tex={screens[2]} hovered={hovered} setHovered={setHovered} />
+                <Iphone model={screens.iphoneModel} hbTex={null} num={3} tex={screens.screen03} hovered={hovered} setHovered={setHovered} />
             </FloatingGroup>
         </>
     );

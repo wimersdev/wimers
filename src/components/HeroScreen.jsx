@@ -6,15 +6,15 @@ import './hero/Hero.css';
 
 import * as THREE from "three";
 
-function HeroScreen({assets}) {
+function HeroScreen() {
     const [hovered, setHovered] = useState(false);
     const [activeSection, setActiveSection] = useState(0);
     const cameraRef = useRef();
 
     const screens = [
-        '/textures/screen01.png',
-        '/textures/screen02.png',
-        '/textures/screen03.png',
+        'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/textures/screen01.png',
+        'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/textures/screen01.png',
+        'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/textures/screen01.png',
     ];
 
     const targets = {
@@ -87,7 +87,7 @@ function HeroScreen({assets}) {
                         <ScrollHandler onChange={setActiveSection}>
                             <FloatingPhones
                                 targets={targets}
-                                screens={assets}
+                                screens={screens}
                                 hovered={hovered}
                                 setHovered={setHovered}
                                 activeSection={activeSection}

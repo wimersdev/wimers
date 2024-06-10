@@ -5,8 +5,8 @@ import HugeButton from './HugeButton.jsx';
 
 
 
-const Iphone= ({ hovered, setHovered, tex, num, model }) => {
-    const { nodes, materials } = useGLTF(model);
+const Iphone= ({ hovered, setHovered, tex}) => {
+    const { nodes, materials } = useGLTF('https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/ip.glb');
 
     // Обработчики наведения на iPhone
     const handlePointerOver = () => setHovered(true);
@@ -119,11 +119,11 @@ const Iphone= ({ hovered, setHovered, tex, num, model }) => {
                     scale={0.015}
                 />
             </group>
-            {num === 1 && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
+            {tex === 'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/textures/screen01.png' && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
         </group>
     );
 }
 
-useGLTF.preload(model);
+useGLTF.preload('https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/ip.glb');
 
 export default Iphone;

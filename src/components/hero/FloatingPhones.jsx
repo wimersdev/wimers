@@ -1,5 +1,6 @@
 import FloatingGroup from './FloatingGroup.jsx';
 import Iphone from './Iphone.jsx';
+import {IphoneLow} from "./Iphone_low.jsx";
 
 const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }) => {
 
@@ -18,7 +19,8 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetRotation4={targets.screen04.firstTarget.rotation}
                 activeSection={activeSection}
             >
-                <Iphone tex={screens[0]} hovered={hovered} setHovered={setHovered} />
+                <IphoneLow tex={screens[2]} />
+                {/*<Iphone tex={screens[0]} hovered={hovered} setHovered={setHovered} />*/}
             </FloatingGroup>
 
             <FloatingGroup
@@ -34,7 +36,8 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetRotation4={targets.screen04.secondTarget.rotation}
                 activeSection={activeSection}
             >
-                <Iphone tex={screens[1]} hovered={hovered} setHovered={setHovered} />
+                <IphoneLow tex={screens[2]} />
+                {/*<Iphone tex={screens[1]} hovered={hovered} setHovered={setHovered} />*/}
             </FloatingGroup>
 
             <FloatingGroup
@@ -49,7 +52,8 @@ const FloatingPhones = ({ targets, screens, hovered, setHovered, activeSection }
                 targetPosition4={targets.screen04.thirdTarget.position}
                 targetRotation4={targets.screen04.thirdTarget.rotation}
                 activeSection={activeSection}>
-                <Iphone tex={screens[2]} hovered={hovered} setHovered={setHovered} />
+                <IphoneLow tex={screens[1]} />
+                {/*<Iphone tex={screens[2]} hovered={hovered} setHovered={setHovered} />*/}
             </FloatingGroup>
         </>
     );

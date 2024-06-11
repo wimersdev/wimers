@@ -119,7 +119,7 @@ const Iphone= ({ hovered, setHovered, tex}) => {
                     scale={0.015}
                 />
             </group>
-            {tex === 'https://cdn.jsdelivr.net/gh/wimersdev/wimers@0.0.3/dist/textures/screen01.png' && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
+            {tex === 'https://uploads-ssl.webflow.com/6385ed21375f1c00a4a3f887/6667e35995093eddb0b8396d_screen01.png' && <HugeButton isHovered={hovered} position={[0, -1.15, 0.14]} />}
         </group>
     );
 }

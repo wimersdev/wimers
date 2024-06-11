@@ -16,7 +16,7 @@ const ScreenMaterial = ({ tex }) => {
     }, [texture]);
 
     return (
-        <meshBasicMaterial ref={materialRef} map={texture} />
+        <meshStandardMaterial roughness={0.5} ref={materialRef} map={texture} />
     );
 };
 

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeroScreen from "./components/HeroScreen";
 import './App.css';
-import './normalize.css';
-import './webflow.css';
 
 function App() {
+
+    console.log('nam nam2')
+
     return (
         <>
             <HeroScreen />
